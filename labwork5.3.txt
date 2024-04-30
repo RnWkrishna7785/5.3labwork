@@ -1,0 +1,207 @@
+
+Q.1 Write a Program to find the minimum number from the given 3 numbers using the ternary operator.
+For example,
+Input:
+Enter a value of the first number: 8
+Enter a value of the second number: 3
+Enter a value of the third number: 12
+
+Output:
+The minimum value is: 3
+
+
+
+ans: 
+
+
+
+
+
+
+#include<stdio.h>
+void main(){
+    int num1,num2,num3;
+    printf("enter value 1:");
+    scanf("%d",&num1);
+     printf("enter value 2:");
+    scanf("%d",&num2);
+     printf("enter value 3:");
+    scanf("%d",&num3);
+ //   if (num1<num2){
+   //     if(num1<num3){
+     //       printf("num1 is minimum");
+       // }else{
+         //   printf("num3 is minimum");
+//        }
+  //      }else if(num2<num3){
+    //        printf("num2 is minimum");
+      //  }else{
+        //    printf("num3 is inimum");
+//        }
+//}
+(num1<num2)?(num1<num3)?printf("num1 is min:%d",num1):printf("num3 is min:%d",num3):(num2<num3)?printf("num2 is min:%d",num2):printf("num3 is min:%d",num3);
+}
+
+
+
+
+
+o\p:/tmp/le1LqX4AYR.o
+enter value 1:8
+enter value 2:3
+enter value 3:12
+num2 is min:3
+
+=== Code Exited With Errors ===
+
+
+Q.2 Write a Program to create a menu-driven program for Telecom call service conversation using nested switch case.
+
+
+ans: #include <stdio.h>
+
+int main() {
+    int language, recharge;
+
+    printf(" Telecom Call Service\n");
+    printf("Press 1 for English\n");
+    printf("Press 2 for Hindi\n");
+    printf("Press 3 for Gujarati\n");
+    printf("choose language: ");
+    scanf("%d", &language);
+
+    switch (language) {
+        case 1:
+            printf(" selected English language\n");
+            printf("Press 1 for Internet Recharge\n");
+            printf("Press 2 for Top-up Recharge\n");
+            printf("Press 3 for Special Recharge\n");
+            printf("choose recharge type: ");
+            scanf("%d", &recharge);
+
+            switch (recharge) {
+                case 1:
+                    printf("You have successfully done an Internet Recharge\n");
+                    break;
+                case 2:
+                    printf("You have successfully done a Top-up Recharge\n");
+                    break;
+                case 3:
+                    printf("You have successfully done a Special Recharge\n");
+                    break;
+                default:
+                    printf("Invalid \n");
+            }
+            break;
+
+        case 2:
+            printf(" selected Hindi language\n");
+            printf("internet recharge ke liye 1 dabaiye\n");
+            printf("Top-up recharge ke liye 2 dabaiye\n");
+            printf("Special recharge ke liye 3 dabaiye\n");
+            printf("choose recharge type: ");
+            scanf("%d", &recharge);
+
+            switch (recharge) {
+                case 1:
+                    printf("Aapne safaltapurvak Internet Recharge kar liya he\n");
+                    break;
+                case 2:
+                    printf("Aapne safaltapurvak top-up Recharge kar liya he\n");
+                    break;
+                case 3:
+                    printf("Aapne safaltapurvak vishesh recharge kar liya he\n");
+                    break;
+                default:
+                    printf("invalid\n");
+            }
+            break;
+
+        case 3:
+            printf("selected gujrati language\n");
+            printf("Internet Recharge mate 1 dabavo\n");
+            printf("Top-up Recharge mate 2 dabavo\n");
+            printf("Special Recharge mate 3 dabavo\n");
+            printf("choose recharge type: ");
+            scanf("%d", &recharge);
+
+            switch (recharge) {
+                case 1:
+                    printf("tame safaltapurvak internet recharge karyo che \n");
+                    break;
+                case 2:
+                    printf("tame safaltapurvak top-up recharge karyo che \n");
+                    break;
+                case 3:
+                    printf("tame safaltapurvak vishesh recharge karyo che \n");
+                    break;
+                default:
+                    printf("invalide\n");
+            }
+            break;
+
+        default:
+            printf("Invalide\n");
+    }
+
+    return 0;
+}
+
+
+
+
+o\p:1
+
+
+/tmp/Q5lSZgdpk1.o
+ Telecom Call Service
+Press 1 for English
+Press 2 for Hindi
+Press 3 for Gujarati
+choose language: 1
+ selected English language
+Press 1 for Internet Recharge
+Press 2 for Top-up Recharge
+Press 3 for Special Recharge
+choose recharge type: 2
+You have successfully done a Top-up Recharge
+
+
+=== Code Execution Successful ===
+
+
+o\p:2
+
+tmp/8uPnUxqIQb.o
+ Telecom Call Service
+Press 1 for English
+Press 2 for Hindi
+Press 3 for Gujarati
+choose language: 2
+ selected Hindi language
+internet recharge ke liye 1 dabaiye
+Top-up recharge ke liye 2 dabaiye
+Special recharge ke liye 3 dabaiye
+choose recharge type: 1
+Aapne safaltapurvak Internet Recharge kar liya he
+
+
+=== Code Execution Successful ===
+
+o\p:3
+
+/tmp/nefvCd33cJ.o
+ Telecom Call Service
+Press 1 for English
+Press 2 for Hindi
+Press 3 for Gujarati
+choose language: 3
+selected gujrati language
+Internet Recharge mate 1 dabavo
+Top-up Recharge mate 2 dabavo
+Special Recharge mate 3 dabavo
+choose recharge type: 3
+tame safaltapurvak vishesh recharge karyo che 
+
+
+=== Code Execution Successful ===
